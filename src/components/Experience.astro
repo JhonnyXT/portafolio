@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Líder técnico",
+    company: "Coordinadora Mercantil S.A.S",
+    description:
+      "Responsable en liderar el equipo de desarrollo, implementando buenas prácticas de desarrollo y asegurar la calidad del software. Actualmente también desarrollo software en la parte móvil y backend"
+  },
+  {
+    date: "Feb.2022 - Oct.2023",
+    title: "Desarrollador junior",
+    company: "Coordinadora Mercantil S.A.S",
+    description:
+      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+  },
+  {
+    date: "Ago.2021 - Feb.2022",
+    title: "Profesional en formación",
+    company: "Coordinadora Mercantil S.A.S",
+    description:
+      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
